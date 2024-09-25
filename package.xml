@@ -16,9 +16,6 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <build_depend>roscpp</build_depend>
-
-  <build_export_depend>roscpp</build_export_depend>
-
-  <exec_depend>roscpp</exec_depend>
+  <depend>roscpp</depend>
+  <depend>gazebo_ros</depend>
 </package>

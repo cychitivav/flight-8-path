@@ -9,6 +9,7 @@ project(flight-8-path)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
+  gazebo_ros
 )
 
 ## System dependencies are found with CMake's conventions
@@ -103,7 +104,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES flight-8-path
-#  CATKIN_DEPENDS roscpp
+ CATKIN_DEPENDS roscpp gazebo_ros
 #  DEPENDS system_lib
 )
 
