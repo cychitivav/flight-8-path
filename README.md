@@ -107,9 +107,13 @@ Use this space to show useful examples of how a project can be used. Additional 
 <!-- ROADMAP -->
 ## :roller_coaster:Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-    - [ ] Nested Feature
+- [x] Dockerize the project
+		- Initially, the project will be dockerized with the [MRS Docker](https://github.com/ctu-mrs/mrs_docker) environment but later on, it will be dockerized with a custom Dockerfile because the MRS Docker environment has too many layers and GitHub Codespaces does not support more than 125 layers.
+- [x] Catkin init and create a package
+    ```sh
+		catkin init
+		catkin create pkg <package_name> --catkin-deps <dependencies>
+	```
 
 > __Note__: See the [open issues](https://github.com/cychitivav/repo_name/issues) for a full list of proposed features (and known issues).
 

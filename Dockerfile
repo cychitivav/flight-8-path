@@ -18,7 +18,14 @@ RUN apt-get install -y nautilus curl
 RUN curl https://ctu-mrs.github.io/ppa-stable/add_ppa.sh | bash
 RUN apt install ros-noetic-mrs-uav-system-full -y
 
-WORKDIR /root/catkin_ws/
+WORKDIR /root/workspace
+
+RUN catkin init
+
+RUN catkin config --profile debug --cmake-args -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS='-std=c++17 -Og' -DCMAKE_C_FLAGS='-Og' \
+  catkin config --profile release --cmake-args -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS='-std=c++17' \
+  catkin config --profile reldeb --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS='-std=c++17' \
+  catkin profile set reldeb  
 
 CMD ["bash"]
 

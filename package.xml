@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>flight-8-path</name>
+  <version>0.0.0</version>
+  <description>
+    Package for the flight-8-path technical challenge at 4F4
+  </description>
+
+  <maintainer email="cychitivav@unal.edu.co">Cristian Chitiva</maintainer>
+
+  <license>MIT</license>
+
+  <!-- <url type="website">http://cristianchitiva.dev/flight-8-path</url> -->
+
+  <author email="cychitivav@unal.edu.co">Cristian Chitiva</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+
+  <build_export_depend>roscpp</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+</package>
