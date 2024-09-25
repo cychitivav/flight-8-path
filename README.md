@@ -12,7 +12,7 @@ Find and replace the following text with the name of the project:
 
 <div align="center" id="readme-top">
 
-<img src="https://user-images.githubusercontent.com/30636259/167962176-b8172b07-c769-4a7b-1690-db518c59fffa.png" alt="Logo" width="80"/>
+<img src="./.fig/logo.png" alt="Logo" width="80"/>
 
 <!-- omit in toc -->
 # README title
