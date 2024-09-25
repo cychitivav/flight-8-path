@@ -1,3 +1,14 @@
 {
-	"build": { "dockerfile": "../Dockerfile" }
+	"name": "Flight 8 Path",
+	"build": {
+		"dockerfile": "../Dockerfile"
+	},
+	"workspaceMount": "source=${localWorkspaceFolder},target=/root/catkin_ws/src/flight-8-path,type=bind,consistency=cached",
+	"workspaceFolder": "/root/catkin_ws/src/flight-8-path",
+	"postCreateCommand": "apt update && apt install xauth -y", // Install xauth for GUI
+	"postStartCommand": "cd ~/catkin_ws && catkin build && echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc",
+	"features": {
+		"ghcr.io/devcontainers/features/sshd:1": {},
+		"ghcr.io/devcontainers/features/git:1": {}
+	}
 }
