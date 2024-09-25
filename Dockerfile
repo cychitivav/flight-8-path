@@ -1,3 +1,3 @@
-FROM ctumrs/mrs_uav_system:latest
+FROM ros:noetic-ros-base
 
 CMD [ "bash" ]
