@@ -15,8 +15,10 @@ Find and replace the following text with the name of the project:
 <img src="./.fig/logo.png" alt="Logo" width="80"/>
 
 <!-- omit in toc -->
-# MRS Flight 
-An awesome README description!
+# MRS Flight Path: Figure-8 Pattern
+
+<!-- An awesome README description! -->
+Simple example of a drone flying in the shape of a figure 8. This project is the solution to the technical task for the position of a Software Engineer at MRS. I hope it can be added to the list of examples for the MRS project.
 
 [View Demo](https://github.com/cychitivav/drone-figure-8-flight) · [Report Bug](https://github.com/cychitivav/drone-figure-8-flight/issues) · [Request Feature](https://github.com/cychitivav/drone-figure-8-flight/issues)
 
@@ -100,7 +102,22 @@ This is an example of how to list things you need to use the software and how to
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 > __Note__: For more examples, please refer to the* [*Documentation*](https://github.com/cychitivav/drone-figure-8-flight/wiki)
-> 
+
+
+<!-- ROADMAP -->
+## :roller_coaster:Roadmap
+
+- [ ] Feature 1
+- [ ] Feature 2
+    - [ ] Nested Feature
+
+> __Note__: See the [open issues](https://github.com/cychitivav/repo_name/issues) for a full list of proposed features (and known issues).
+
+<div align="right">
+
+[:arrow_double_up:back to top](#readme-top)
+</div>
+
 
 <!-- CONTRIBUTING -->
 ## :busts_in_silhouette:Contributing
