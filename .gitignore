@@ -9,3 +9,8 @@
 
 # Test files
 *test*
+
+# OS trash files
+.DS_Store
+winsude.debug
+desktop.ini

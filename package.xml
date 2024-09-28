@@ -2,17 +2,16 @@
 <package format="2">
   <name>flight-8-path</name>
   <version>0.0.0</version>
+
   <description>
     Package for the flight-8-path technical challenge at 4F4
   </description>
-
-  <maintainer email="cychitivav@unal.edu.co">Cristian Chitiva</maintainer>
-
-  <license>MIT</license>
-
   <!-- <url type="website">http://cristianchitiva.dev/flight-8-path</url> -->
 
+  <maintainer email="cychitivav@unal.edu.co">Cristian Chitiva</maintainer>
   <author email="cychitivav@unal.edu.co">Cristian Chitiva</author>
+
+  <license>MIT</license>
 
   <buildtool_depend>catkin</buildtool_depend>
 
