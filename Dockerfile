@@ -14,8 +14,8 @@ RUN apt-get install -y python3-pip
 RUN apt-get install -y nautilus curl
 
 # Install MRS packages
-RUN curl https://ctu-mrs.github.io/ppa-stable/add_ppa.sh | bash
-RUN apt install ros-noetic-mrs-uav-system-full -y
+# RUN curl https://ctu-mrs.github.io/ppa-stable/add_ppa.sh | bash
+# RUN apt install ros-noetic-mrs-uav-system-full -y
 
 # Create user
 RUN useradd -ms /bin/bash mrs
