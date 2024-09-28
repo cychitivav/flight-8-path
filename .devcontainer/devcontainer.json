@@ -1,14 +1,10 @@
 {
 	"name": "Flight 8 Path",
 	"build": {
-		"dockerfile": "../Dockerfile"
+		"dockerfile": "./Dockerfile"
 	},
-	"workspaceMount": "source=${localWorkspaceFolder},target=~/workspace/src/flight-8-path,type=bind,consistency=cached",
-	"workspaceFolder": "~/workspace/src/flight-8-path",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/home/mrs/workspace/src/flight-8-path,type=bind,consistency=cached",
+	"workspaceFolder": "/home/mrs/workspace/src/flight-8-path",
 	"postCreateCommand": "apt update && apt install xauth -y", // Install xauth for GUI
-	"postStartCommand": "cd ~/workspace && catkin build && rosdep update && echo 'source ~/workspace/devel/setup.bash' >> ~/.bashrc",
-	"features": {
-		"ghcr.io/devcontainers/features/sshd:1": {},
-		"ghcr.io/devcontainers/features/git:1": {}
-	}
+	"postStartCommand": "cd /home/mrs/workspace && catkin build && rosdep update && echo 'source /home/mrs/workspace/devel/setup.bash' >> ~/.bashrc"
 }
