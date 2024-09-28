@@ -5,6 +5,17 @@
 	},
 	"workspaceMount": "source=${localWorkspaceFolder},target=/home/mrs/workspace/src/flight-8-path,type=bind,consistency=cached",
 	"workspaceFolder": "/home/mrs/workspace/src/flight-8-path",
-	"postCreateCommand": "apt update && apt install xauth -y", // Install xauth for GUI
-	"postStartCommand": "cd /home/mrs/workspace && catkin build && rosdep update && echo 'source /home/mrs/workspace/devel/setup.bash' >> ~/.bashrc"
+	"postCreateCommand": "sudo apt update && sudo apt install xauth -y", // Install xauth for GUI
+	"postStartCommand": "cd /home/mrs/workspace && catkin build && rosdep update && echo 'source /home/mrs/workspace/devel/setup.bash' >> ~/.bashrc",
+	"features": {
+		"ghcr.io/devcontainers/features/sshd:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/git": {
+			"version": "latest"
+		}
+	},
+	"remoteEnv": {
+		"DISPLAY": "localhost:10.0"
+	}
 }
