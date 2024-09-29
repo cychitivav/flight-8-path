@@ -175,15 +175,15 @@ Use this space to show useful examples of how a project can be used. Additional 
 -   [x] Create a tmux session file
 -   [x] Configure nodelet manager
 -   [x] Compute the parametric equation of the figure 8
-        ![infinite shape](.fig/infinite_shape.png)
+    ![infinite shape](.fig/infinite_shape.png)
 
-$$
-\begin{align*}
-  x(t) &= \frac{\text{scale}\cdot\cos(t)}{1+\sin^2(t)} \\
-  y(t) &= \frac{\text{scale}\cdot\sin(t)\cos(t)}{1+\sin^2(t)} \\
-  z(t) &= \text{scale}
-\end{align*}
-$$
+    $$
+    \begin{align*}
+      x(t) &= \frac{\text{scale}\cdot\cos(t)}{1+\sin^2(t)} \\
+      y(t) &= \frac{\text{scale}\cdot\sin(t)\cos(t)}{1+\sin^2(t)} \\
+      z(t) &= \text{scale}
+    \end{align*}
+    $$
 
 -   [x] Create a node that publishes the figure 8 path to `/${UAV_NAME}/trajectory_generation/path`
 -   [x] Create a launch file
