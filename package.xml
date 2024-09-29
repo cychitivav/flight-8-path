@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>flight-8-path</name>
+  <name>flight_8_path</name>
   <version>0.0.0</version>
 
   <description>
-    Package for the flight-8-path technical challenge at 4F4
+    Package for a technical challenge at 4F4, which consists of generating a figure-eight trajectory
+    and following it with a drone.
   </description>
   <!-- <url type="website">http://cristianchitiva.dev/flight-8-path</url> -->
 
@@ -17,4 +18,10 @@
 
   <depend>roscpp</depend>
   <depend>gazebo_ros</depend>
+  <depend>std_msgs</depend>
+  <depend>nodelet</depend>
+
+  <export>
+    <nodelet plugin="${prefix}/nodelets.xml" />
+  </export>
 </package>
