@@ -2,27 +2,23 @@ FROM osrf/ros:noetic-desktop-full
 
 SHELL ["/bin/bash", "-c"]
 
-# Install catkin tools
-RUN apt-get update && apt-get install python3-catkin-tools -y
-
-RUN echo "source /opt/ros/noetic/setup.bash" >>~/.bashrc
-
-# Install pip tools
-RUN apt-get install -y python3-pip
-
 # Install misc tools
-RUN apt-get install -y nautilus curl
+RUN apt-get update && apt-get install -y python3-catkin-tools python3-pip nautilus curl
 
 # Install MRS packages
-# RUN curl https://ctu-mrs.github.io/ppa-stable/add_ppa.sh | bash
-# RUN apt install ros-noetic-mrs-uav-system-full -y
+RUN curl https://ctu-mrs.github.io/ppa-stable/add_ppa.sh | bash
+RUN apt install ros-noetic-mrs-uav-system-full -y
 
 # Create user
-RUN useradd -ms /bin/bash mrs
+RUN useradd -m -s /bin/bash mrs
 RUN usermod -aG sudo mrs
 
 # Allow the user to run sudo without a password
 RUN echo "mrs ALL=(ALL) NOPASSWD:ALL" >>/etc/sudoers
+
+# Add ROS source to bashrc
+RUN echo "source /opt/ros/noetic/setup.bash" >>/home/mrs/.bashrc
+RUN echo "source /home/mrs/workspace/devel/setup.bash" >>/home/mrs/.bashrc
 
 USER mrs
 
