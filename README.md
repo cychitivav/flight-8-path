@@ -110,7 +110,7 @@ This is an example of how you may give instructions on setting up your project.
 > docker exec -it flight-8-path bash
 > ```
 
-#### Manual
+#### Local Installation
 
 If you are using Ubuntu 20.04, you can install ROS Noetic and the MRS system by following the steps below:
 
