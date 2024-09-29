@@ -93,13 +93,15 @@ This is an example of how you may give instructions on setting up your project.
 #### Docker
 
 2. Build the Docker image
-   `sh
-docker build -t flight-8-path:latest -f ./.devcontainer/Dockerfile .
-`
+
+    ```sh
+     docker build -t flight-8-path:latest -f ./.devcontainer/Dockerfile .
+    ```
+
 3. Run the Docker container
-   `sh
-./cli/run.sh
-`
+    ```sh
+     ./cli/run.sh
+    ```
 
 > [!NOTE]
 > If you need to open other terminals, you can use the following command:
@@ -114,21 +116,22 @@ If you are using Ubuntu 20.04, you can install ROS Noetic and the MRS system by 
 
 2. Install ROS
 
-    ```sh
-    sudo apt-get install ros-noetic-desktop-full
-    ```
+```sh
+sudo apt-get install ros-noetic-desktop-full
+```
 
 3. Install MRS system
 
-    ```sh
-    curl https://ctu-mrs.github.io/ppa-stable/add_ppa.sh | bash
-    sudo apt install ros-noetic-mrs-uav-system-full -y
-    ```
+```sh
+curl https://ctu-mrs.github.io/ppa-stable/add_ppa.sh | bash
+sudo apt install ros-noetic-mrs-uav-system-full -y
+```
 
 4. Move the project to the `src` folder of the MRS workspace
-    ```sh
-    mv flight-8-path ~/catkin_ws/src
-    ```
+
+```sh
+mv flight-8-path ~/catkin_ws/src
+```
 
 #### GitHub Codespaces
 
