@@ -20,6 +20,9 @@ RUN echo "mrs ALL=(ALL) NOPASSWD:ALL" >>/etc/sudoers
 RUN echo "source /opt/ros/noetic/setup.bash" >>/home/mrs/.bashrc
 RUN echo "source /home/mrs/workspace/devel/setup.bash" >>/home/mrs/.bashrc
 
+# Enable terminal colors
+RUN sed -i 's/#force_color_prompt=yes/force_color_prompt=yes/' /home/mrs/.bashrc
+
 USER mrs
 
 WORKDIR /home/mrs/workspace
