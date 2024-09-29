@@ -1,0 +1,6 @@
+<library path="libEightFlier">
+  <class name="flight_8_path/EightFlier" type="flight_8_path::EightFlier"
+    base_class_type="nodelet::Nodelet">
+    <description> A nodelet for generating and following a figure-eight trajectory. </description>
+  </class>
+</library>
