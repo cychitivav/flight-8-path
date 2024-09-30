@@ -15,7 +15,6 @@ Find and replace the following text with the name of the project:
 <img src="./.fig/logo.png" alt="Logo" width="80"/>
 
 <!-- omit in toc -->
-
 # MRS Flight Path: Figure-8 Pattern
 
 <!-- An awesome README description! -->
@@ -34,20 +33,20 @@ Simple example of a drone flying in the shape of a figure 8. This project is the
 
 <!-- TABLE OF CONTENTS -->
 <!-- omit in toc -->
-
 ## :pencil:Table of contents
 
--   [:pushpin:About The Project](#pushpinabout-the-project)
-    -   [Built With](#built-with)
--   [:checkered_flag:Getting Started](#checkered_flaggetting-started)
-    -   [Prerequisites](#prerequisites)
-    -   [Installation](#installation)
--   [:balloon:Usage](#balloonusage)
--   [:roller_coaster:Roadmap](#roller_coasterroadmap)
--   [:busts_in_silhouette:Contributing](#busts_in_silhouettecontributing)
--   [:key:License](#keylicense)
--   [:pencil2:Authors](#pencil2authors)
--   [:tada:Acknowledgments](#tadaacknowledgments)
+- [:pushpin:About The Project](#pushpinabout-the-project)
+  - [Built With](#built-with)
+- [:checkered\_flag:Getting Started](#checkered_flaggetting-started)
+  - [Installation](#installation)
+    - [Docker](#docker)
+    - [Local Installation](#local-installation)
+    - [GitHub Codespaces](#github-codespaces)
+- [:balloon:Usage](#balloonusage)
+    - [Demo](#demo)
+- [:roller\_coaster:Roadmap](#roller_coasterroadmap)
+- [:busts\_in\_silhouette:Contributing](#busts_in_silhouettecontributing)
+- [:key:License](#keylicense)
 
 <!-- ABOUT THE PROJECT -->
 
