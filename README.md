@@ -53,7 +53,9 @@ Simple example of a drone flying in the shape of a figure 8. This project is the
 
 ## :pushpin:About The Project
 
-[![Preview](./.fig/preview.gif)](./.fig/preview.gif)
+<div align="center">
+    <img src="./.fig/preview.gif" alt="Preview" width="80%"/>
+</div>
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor `flight-8-path`
 
