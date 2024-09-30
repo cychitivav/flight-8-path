@@ -139,8 +139,8 @@ mv flight-8-path ~/catkin_ws/src
 If you are using GitHub Codespaces, you can use the following steps:
 
 2. Open the GitHub Codespaces (yes, it's that simple!)
-    > [!TIP]
-    > If you want to use GUI tools, you can install a X server. This video shows how to do it: [How to run GUI apps in a GitHub Codespace](https://www.youtube.com/watch?v=ewLbgs1thSk)
+> [!TIP]
+> If you want to use GUI tools, you can install a X server. This video shows how to do it: [How to run GUI apps in a GitHub Codespace](https://www.youtube.com/watch?v=ewLbgs1thSk)
 
 Finally, build the project
 
