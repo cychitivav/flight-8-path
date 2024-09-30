@@ -186,7 +186,8 @@ rosservice call /${UAV_NAME}/control_manager/start_trajectory_tracking {}
 ```
 
 #### Demo
-https://github.com/user-attachments/assets/c03773ec-2ac4-466c-a4f6-9ca053c18683 
+
+https://github.com/user-attachments/assets/c03773ec-2ac4-466c-a4f6-9ca053c18683
 
 <div align="right">
 
@@ -201,10 +202,10 @@ https://github.com/user-attachments/assets/c03773ec-2ac4-466c-a4f6-9ca053c18683
 -   [x] Dockerize the project - Initially, the project will be dockerized with the [MRS Docker](https://github.com/ctu-mrs/mrs_docker) environment but later on, it will be dockerized with a custom Dockerfile because the MRS Docker environment has too many layers and GitHub Codespaces does not support more than 125 layers.
 -   [x] Catkin init and create a package
 
-```sh
-	catkin init
-	catkin create pkg <package_name> --catkin-deps <dependencies>
-```
+    ```sh
+    catkin init
+    catkin create pkg <package_name> --catkin-deps <dependencies>
+    ```
 
 -   [x] Create a tmux session file
 -   [x] Configure nodelet manager
