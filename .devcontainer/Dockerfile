@@ -34,6 +34,4 @@ RUN catkin config --profile debug --cmake-args -DCMAKE_BUILD_TYPE=Debug -DCMAKE_
   catkin config --profile reldeb --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS='-std=c++17' \
   catkin profile set reldeb
 
-RUN echo "source /opt/ros/noetic/setup.bash" >>~/.bashrc
-
 CMD ["bash"]
