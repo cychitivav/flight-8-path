@@ -156,9 +156,36 @@ catkin build
 
 ## :balloon:Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+You can run the project by executing the following command:
 
-> **Note**: For more examples, please refer to the* [*Documentation\*](https://github.com/cychitivav/flight-8-path/wiki)
+```sh
+./tmux/start.sh
+```
+
+This command will start the [tmux session](./tmux/session.yml) and run the following nodes:
+
+-   `roscore`
+-   `gazebo`
+-   `uav spawner`
+-   `hw_api`
+-   `takeoff`
+-   `status`
+-   `rviz`
+-   `eight_flier`
+
+In the last node(`eight_flier`), the figure 8 path is computed and published to the topic `/${UAV_NAME}/trajectory_generation/path`.
+
+To start the trajectory, you can use the following command:
+
+```sh
+rosservice call /${UAV_NAME}/control_manager/start_trajectory_tracking {}
+```
+
+<div align="right">
+
+[:arrow_double_up:back to top](#readme-top)
+
+</div>
 
 <!-- ROADMAP -->
 
