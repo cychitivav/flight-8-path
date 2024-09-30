@@ -53,7 +53,7 @@ Simple example of a drone flying in the shape of a figure 8. This project is the
 
 ## :pushpin:About The Project
 
-[![Product Name Screen Shot](https://user-images.githubusercontent.com/30635659/169600958-763d1628-b7bb-475c-a8bc-56120d1d3ff9.svg)](https://user-images.githubusercontent.com/30635659/169600958-763d1628-b7bb-475c-a8bc-56120d1d3ff9.svg)
+[![Preview](./.fig/preview.gif)](./.fig/preview.gif)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor `flight-8-path`
 
@@ -175,7 +175,7 @@ Use this space to show useful examples of how a project can be used. Additional 
 -   [x] Create a tmux session file
 -   [x] Configure nodelet manager
 -   [x] Compute the parametric equation of the figure 8
-    ![infinite shape](.fig/infinite_shape.png)
+        ![infinite shape](.fig/infinite_shape.png)
 
     $$
     \begin{align*}
